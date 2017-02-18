@@ -19,9 +19,6 @@
   }
 });
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
@@ -32,7 +29,9 @@
 </script>
 
 
-<button id="loginBtn">Facebook Login</button>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
 <div id="response"></div>
 
 </body>
