@@ -5,13 +5,23 @@
 <meta charset="UTF-8">
 
 <style>
+
+  html,body {
+    height:100%;
+    padding:0;
+    margin:0;
+  }
+
   #content{
+    background-color: #DDD;
+    padding: 0;
     width: auto;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
 </style>
 
 </head>
@@ -108,10 +118,11 @@
 <div id="content">
   <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
   </fb:login-button>
+  <div id="status">
+  </div>
 </div>
 
-<div id="status">
-</div>
+
 
 
 
