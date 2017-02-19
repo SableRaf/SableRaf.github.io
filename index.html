@@ -3,6 +3,15 @@
 <head>
 <title>Facebook Login JavaScript Example</title>
 <meta charset="UTF-8">
+
+<style>
+  #content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
 </head>
 <body>
 <script>
@@ -94,8 +103,10 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
+<div id="content">
+  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+  </fb:login-button>
+</div>
 
 <div id="status">
 </div>
